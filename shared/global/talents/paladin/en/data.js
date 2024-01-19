@@ -327,7 +327,7 @@ i++;
 			
 //Valiance Aura - Protection
 rank[i] = [
-  "<span style=text-align:left;float:left;>Instant cast</span><br>Gives immunity to all fear effects to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.<br>This Aura requires an immense amount of focus and reduces both the movement and attack speed of the Paladin by 50% while active.<br>"
+  "<span style=text-align:left;float:left;>Instant cast</span><br>Gives immunity to all fear effects to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time."
   ];
 i++;
 

@@ -16,10 +16,10 @@ talent[i] = [0, "Nature's Grasp", 1, 2, 1]; i++;
 talent[i] = [0, "Improved Nature's Grasp", 4, 3, 1, [getTalentID("Nature's Grasp"),1]]; i++;
 talent[i] = [0, "Improved Entangling Roots", 3, 1, 2]; i++; 
 talent[i] = [0, "Improved Moonfire", 5, 2, 2]; i++;
-talent[i] = [0, "Natural Weapons", 5, 3, 2]; i++;
+talent[i] = [0, "Natural Weapons", 3, 3, 2]; i++;
 talent[i] = [0, "Natural Shapeshifter", 3, 4, 2]; i++;
 talent[i] = [0, "Improved Thorns", 3, 1, 3]; i++;
-talent[i] = [0, "Omen of Clarity", 1, 3, 3, [getTalentID("Natural Weapons"),5]]; i++;
+talent[i] = [0, "Omen of Clarity", 1, 3, 3, [getTalentID("Natural Weapons"),3]]; i++;
 talent[i] = [0, "Nature's Reach", 2, 4, 3]; i++;
 talent[i] = [0, "Vengeance", 5, 2, 4, [getTalentID("Improved Moonfire"),5]]; i++;
 talent[i] = [0, "Improved Starfire", 5, 3, 4]; i++;
@@ -34,10 +34,10 @@ t++;
 //feral combat talents
 talent[i] = [1, "Ferocity", 5, 2, 1]; i++;
 talent[i] = [1, "Feral Aggression", 5, 3, 1]; i++;
-talent[i] = [1, "Feral Instinct", 5, 1, 2]; i++;
+talent[i] = [1, "Feral Instinct", 3, 1, 2]; i++;
 talent[i] = [1, "Brutal Impact", 2, 2, 2]; i++;
-talent[i] = [1, "Thick Hide", 5, 3, 2]; i++;
-talent[i] = [1, "Feline Swiftness", 2, 1, 3]; i++;
+talent[i] = [1, "Thick Hide", 3, 3, 2]; i++;
+talent[i] = [1, "Feral Swiftness", 2, 1, 3]; i++;
 talent[i] = [1, "Feral Charge", 1, 2, 3]; i++;
 talent[i] = [1, "Sharpened Claws", 3, 3, 3]; i++;
 talent[i] = [1, "Improved Shred", 2, 1, 4]; i++;
@@ -45,8 +45,11 @@ talent[i] = [1, "Predatory Strikes", 3, 2, 4]; i++;
 talent[i] = [1, "Blood Frenzy", 2, 3, 4, [getTalentID("Sharpened Claws"),3]]; i++;
 talent[i] = [1, "Primal Fury", 2, 4, 4, [getTalentID("Sharpened Claws"),3]]; i++;
 talent[i] = [1, "Savage Fury", 2, 1, 5]; i++;
-talent[i] = [1, "Faerie Fire (Feral)", 1, 3, 5]; i++;
+talent[i] = [1, "Feral Precision", 1, 3, 5, [getTalentID("Blood Frenzy"),2]]; i++;
+talent[i] = [1, "Savage Instincts", 1, 4, 5, [getTalentID("Primal Fury"),2]]; i++;
 talent[i] = [1, "Heart of the Wild", 5, 2, 6, [getTalentID("Predatory Strikes"),3]]; i++;
+talent[i] = [1, "Feline Tenacity", 2, 3, 6, [getTalentID("Feral Precision"),1]]; i++;
+talent[i] = [1, "Ursine Tenacity", 2, 4, 6, [getTalentID("Savage Instincts"),1]]; i++;
 talent[i] = [1, "Leader of the Pack", 1, 2, 7]; i++;
 
 treeStartStop[t] = i -1;
@@ -122,10 +125,8 @@ i++;
 
 //Natural Weapons - Balance
 rank[i] = [
-"Increases the damage you deal with physical attacks in all forms by 2%.",
-"Increases the damage you deal with physical attacks in all forms by 4%.",
+"Increases the damage you deal with physical attacks in all forms by 3%.",
 "Increases the damage you deal with physical attacks in all forms by 6%.",
-"Increases the damage you deal with physical attacks in all forms by 8%.",
 "Increases the damage you deal with physical attacks in all forms by 10%."
 		];
 i++;		
@@ -150,7 +151,7 @@ i++;
 
 //Omen of Clarity - Balance 
 rank[i] = [
-		"120 Mana<br><span style=text-align:left;float:left;>Instant cast</span><br>Imbues the Druid with natural energy. Each of the druid's melee attacks has a chance of causing the caster to enter a Clearcasting state. The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 5 min."
+		"120 Mana<br><span style=text-align:left;float:left;>Instant cast</span><br>Imbues the Druid with natural energy. Each of the druid's damaging attacks has a chance of causing the caster to enter a Clearcasting state. The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 5 min."
 		];
 i++;		
 
@@ -189,26 +190,26 @@ i++;
 
 //Moonglow - Balance
 rank[i] = [
-"Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 3%.",
-"Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 6%.",
-"Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 9%."
+"Reduces the Mana cost of your Moonfire, Starfire, and Wrath spells by 5% and your Healing Touch, Regrowth and Rejuvenation spells by 3%.",
+"Reduces the Mana cost of your Moonfire, Starfire, and Wrath spells by 10% and your Healing Touch, Regrowth and Rejuvenation spells by 6%.",
+"Reduces the Mana cost of your Moonfire, Starfire, and Wrath spells by 15% and your Healing Touch, Regrowth and Rejuvenation spells by 9%."
 		];		
 i++;		
 
 //Moonfury - Balance  			
 rank[i] = [
-"Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%.",
-"Increases the damage done by your Starfire, Moonfire and Wrath spells by 4%.",
+"Increases the damage done by your Starfire, Moonfire and Wrath spells by 3%.",
 "Increases the damage done by your Starfire, Moonfire and Wrath spells by 6%.",
-"Increases the damage done by your Starfire, Moonfire and Wrath spells by 8%.",
-"Increases the damage done by your Starfire, Moonfire and Wrath spells by 10%."
+"Increases the damage done by your Starfire, Moonfire and Wrath spells by 9%.",
+"Increases the damage done by your Starfire, Moonfire and Wrath spells by 12%.",
+"Increases the damage done by your Starfire, Moonfire and Wrath spells by 15%."
 		];
 i++;		
 
 
 //Moonkin Form - Balance  
 rank[i] = [
-		"684 Mana<br><span style=text-align:left;float:left;>Instant cast</span><br>Transforms the druid into Moonkin Form. While in this form armor is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.<br><br>The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+		"684 Mana<br><span style=text-align:left;float:left;>Instant cast</span><br>Transforms the druid into Moonkin Form. While in this form armor is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells and Insect Swarm while shapeshifted.<br><br>The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
 		];
 i++;
 
@@ -233,20 +234,18 @@ i++;
 
 //Feral Aggression - Feral
 rank[i] = [
-"Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite by 3%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite by 6%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite by 9%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite by 12%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite by 15%."
+"Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite and Rip by 3%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite and Rip by 6%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite and Rip by 9%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite and Rip by 12%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite and Rip by 15%."
 		];
 i++;
 
 //Feral Instinct - Feral
 rank[i] = [
-"Increases threat caused in Bear and Dire Bear Form by 3% and reduces the chance enemies have to detect you while Prowling.",
-"Increases threat caused in Bear and Dire Bear Form by 6% and reduces the chance enemies have to detect you while Prowling.",
-"Increases threat caused in Bear and Dire Bear Form by 9% and reduces the chance enemies have to detect you while Prowling.",
-"Increases threat caused in Bear and Dire Bear Form by 12% and reduces the chance enemies have to detect you while Prowling.",
+"Increases threat caused in Bear and Dire Bear Form by 5% and reduces the chance enemies have to detect you while Prowling.",
+"Increases threat caused in Bear and Dire Bear Form by 10% and reduces the chance enemies have to detect you while Prowling.",
 "Increases threat caused in Bear and Dire Bear Form by 15% and reduces the chance enemies have to detect you while Prowling."
 		];
 i++;		
@@ -260,18 +259,16 @@ i++;
 
 //Thick Hide - Feral 
 rank[i] = [
-"Increases your Armor contribution from items by 2%.",
-"Increases your Armor contribution from items by 4%.",
-"Increases your Armor contribution from items by 6%.",
-"Increases your Armor contribution from items by 8%.",
+"Increases your Armor contribution from items by 3%.",
+"Increases your Armor contribution from items by 7%.",
 "Increases your Armor contribution from items by 10%."
 		];		
 i++;		
 
 //Feline Swiftness - Feral
 rank[i] = [
-"Increases your movement speed by 15% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 2%.",
-"Increases your movement speed by 30% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 4%."
+"Increases your movement speed by 15% while outdoors in Cat Form and increases your chance to dodge while in Cat Form, Bear Form, and Dire Bear Form by 2%.",
+"Increases your movement speed by 30% while outdoors in Cat Form and increases your chance to dodge while in Cat Form, Bear Form, and Dire Bear Form by 4%."
 		];
 i++;		
 
@@ -291,8 +288,8 @@ i++;
 
 //Improved Shred - Feral 
 rank[i] = [
-"Reduces the Energy cost of your Shred ability by 6.",
-"Reduces the Energy cost of your Shred ability by 12."
+"Reduces the Energy cost of your Shred ability by 7.",
+"Reduces the Energy cost of your Shred ability by 15."
 		];
 i++;		
 
@@ -310,7 +307,7 @@ rank[i] = [
 "Your critical strikes from Cat Form abilities that add combo points have a 100% chance to add an additional combo point."
 		];
 i++;		
-		
+
 //Primal Fury - Feral 
 rank[i] = [
 "Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.",
@@ -324,15 +321,16 @@ rank[i] = [
 		"Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 20%."		
 		];
 i++;		
-		
-//Faerie Fire (Feral) - Feral 
 
+//Feral Precision - Feral 
 rank[i] = [
-		"30 yd range<br><span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>6 sec cooldown</span><br>Requires Cat Form, Bear Form, Dire Bear Form<br>Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.\
-		<br><br>&nbsp;Trainable Ranks Listed Below:<br>\
-		&nbsp;Rank 2: -285 Armor<br>\
-		&nbsp;Rank 3: -395 Armor<br>\
-		&nbsp;Rank 4: -505 Armor"
+		"Increases the critial strike chance of Shred ability by 15%.",		
+		];
+i++;	
+
+//Savage Instincts - Feral 
+rank[i] = [
+		"Reduces the cooldown of Enrage ability by 30 seconds. In addition, you are immune to Fear effects while Enraged.",		
 		];
 i++;
 	
@@ -344,8 +342,22 @@ rank[i]=[
 "Increases your Intellect by 16%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 16%.",
 "Increases your Intellect by 20%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 20%."
 		];
-i++;		
-		
+i++;
+
+//Feline Tenacity - Feral 
+rank[i] = [
+		"While in Cat Form, each successful attack increases your attack speed by 2%. Stacks up to 10 times. Lasts 20 seconds.",
+		"While in Cat Form, each successful attack increases your attack speed by 4%. Stacks up to 10 times. Lasts 20 seconds."		
+		];
+i++;	
+
+//Ursine Tenacity - Feral 
+rank[i] = [
+		"While in Bear form or Dire Bear Form, each successful attack increases your attack speed by 1%. Stacks up to 10 times. Lasts 20 seconds.",
+		"While in Bear form or Dire Bear Form, each successful attack increases your attack speed by 2%. Stacks up to 10 times. Lasts 20 seconds."	
+		];
+i++;			
+
 //Leader of the Pack - Feral
 rank[i]=[
 "While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 3%."

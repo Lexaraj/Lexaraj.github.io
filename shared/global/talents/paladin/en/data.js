@@ -17,7 +17,7 @@ talent[i] = [0, "Divine Intellect", 5, 3, 1]; i++;
 talent[i] = [0, "Spiritual Focus", 5, 2, 2]; i++;
 talent[i] = [0, "Improved Seal of Righteousness", 5, 3, 2]; i++; 
 talent[i] = [0, "Healing Light", 3, 1, 3]; i++;
-talent[i] = [0, "Consecration", 1, 2, 3]; i++;
+talent[i] = [0, "Improved Consecration", 1, 2, 3]; i++;
 talent[i] = [0, "Improved Lay on Hands", 2, 3, 3]; i++;
 talent[i] = [0, "Unyielding Faith", 2, 4, 3]; i++;
 talent[i] = [0, "Illumination", 5, 2, 4]; i++;
@@ -31,21 +31,22 @@ treeStartStop[t] = i -1;
 t++;
 
 //protection talents
-talent[i] = [1, "Improved Devotion Aura", 5, 2, 1]; i++;
+talent[i] = [1, "Toughness", 5, 2, 1]; i++;
 talent[i] = [1, "Redoubt", 5, 3, 1]; i++;
 talent[i] = [1, "Precision", 3, 1, 2]; i++;
 talent[i] = [1, "Guardian's Favor", 2, 2, 2]; i++;
-talent[i] = [1, "Toughness", 5, 4, 2]; i++;
+talent[i] = [1, "Ardent Defender", 5, 4, 2]; i++;
 talent[i] = [1, "Blessing of Kings", 1, 1, 3]; i++;
 talent[i] = [1, "Improved Righteous Fury", 3, 2, 3]; i++;
-talent[i] = [1, "Shield Specialization", 3, 3, 3, [getTalentID("Redoubt"),5]]; i++;
-talent[i] = [1, "Anticipation", 5, 4, 3]; i++;
+talent[i] = [1, "Shield Specialization", 2, 3, 3, [getTalentID("Redoubt"),5]]; i++;
+talent[i] = [1, "Blessing of Sanctuary", 1, 4, 3]; i++;
 talent[i] = [1, "Improved Hammer of Justice", 3, 2, 4]; i++;
 talent[i] = [1, "Improved Concentration Aura", 3, 3, 4]; i++;
-talent[i] = [1, "Blessing of Sanctuary", 1, 2, 5]; i++;
+talent[i] = [1, "Holy Shield", 1, 2, 5]; i++;
 talent[i] = [1, "Reckoning", 5, 3, 5]; i++;
-talent[i] = [1, "One-Handed Weapon Specialization", 5, 3, 6]; i++;
-talent[i] = [1, "Holy Shield", 1, 2, 7, [getTalentID("Blessing of Sanctuary"),1]]; i++;
+talent[i] = [1, "Divine Arbiter", 2, 1, 6]; i++;
+talent[i] = [1, "Unwavering Devotion", 3, 3, 6]; i++;
+talent[i] = [1, "Valiance Aura", 1, 2, 7, [getTalentID("Holy Shield"),1]]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -125,13 +126,8 @@ i++;
 
 //Consecration - Retribution 
 rank[i]=[
-"135 Mana<br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>8 sec cooldown</span><br>Consecrates the land beneath the Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area.<br><br>\
-&nbsp;Trainable Ranks Listed Below:<br>\
-&nbsp;Rank 2: 235 Mana, 120 Holy damage<br>\
-&nbsp;Rank 3: 320 Mana, 192 Holy damage<br>\
-&nbsp;Rank 4: 435 Mana, 280 Holy damage<br>\
-&nbsp;Rank 5: 565 Mana, 384 Holy damage"
-  ];
+"Reduces the mana cost of Consecration by 50%."
+		];
 i++;  
 	
 //Improved Lay on Hands - Holy
@@ -201,31 +197,31 @@ rank[i] = [
 i++;
 
 
-//Improved Devotion Aura - Protection 
+//Toughness - Protection 
 rank[i] = [
-"Increases the armor bonus of your Devotion Aura by 5%.",
-"Increases the armor bonus of your Devotion Aura by 10%.",
-"Increases the armor bonus of your Devotion Aura by 15%.",
-"Increases the armor bonus of your Devotion Aura by 20%.",
-"Increases the armor bonus of your Devotion Aura by 25%."
+		"Increases your armor value from items by 2%.",
+		"Increases your armor value from items by 4%.",
+		"Increases your armor value from items by 6%.",
+		"Increases your armor value from items by 8%.",
+		"Increases your armor value from items by 10%."		
 		];
 i++;		
 
 //Redoubt - Protection
 rank[i] = [
-"Increases your chance to block attacks with your shield by 6% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.",
-"Increases your chance to block attacks with your shield by 12% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.",
-"Increases your chance to block attacks with your shield by 18% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.",
-"Increases your chance to block attacks with your shield by 24% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.",
-"Increases your chance to block attacks with your shield by 30% after being the victim of a critical strike. Lasts 10 sec or 5 blocks."
+"Successful melee or ranged attacks against you have a 2% chance to increase your chance to block by 6%. Lasts 10 sec or 5 blocks.",
+"Successful melee or ranged attacks against you have a 4% chance to increase your chance to block by 12%. Lasts 10 sec or 5 blocks.",
+"Successful melee or ranged attacks against you have a 6% chance to increase your chance to block by 18%. Lasts 10 sec or 5 blocks.",
+"Successful melee or ranged attacks against you have a 8% chance to increase your chance to block by 24%. Lasts 10 sec or 5 blocks.",
+"Successful melee or ranged attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks."
 		];
 i++;
 
 //Precision - Protection
 rank[i] = [
-"Increases your chance to hit with melee weapons by 1%.",
-"Increases your chance to hit with melee weapons by 2%.",
-"Increases your chance to hit with melee weapons by 3%."
+"Increases your chance to hit with melee weapons and spells by 1%.",
+"Increases your chance to hit with melee weapons and spells by 2%.",
+"Increases your chance to hit with melee weapons and spells by 3%."
 		];
 i++;		
 
@@ -236,13 +232,13 @@ rank[i] = [
 		];		
 i++;		
 
-//Toughness - Protection 
+//Ardent Defender - Protection 
 rank[i] = [
-		"Increases your armor value from items by 2%.",
-		"Increases your armor value from items by 4%.",
-		"Increases your armor value from items by 6%.",
-		"Increases your armor value from items by 8%.",
-		"Increases your armor value from items by 10%."		
+"Increases the damage you deal with one-handed melee weapons by 2% and increases your Defense skill by 2 while a shield is equipped.",
+"Increases the damage you deal with one-handed melee weapons by 4% and increases your Defense skill by 4 while a shield is equipped.",
+"Increases the damage you deal with one-handed melee weapons by 6% and increases your Defense skill by 6 while a shield is equipped.",
+"Increases the damage you deal with one-handed melee weapons by 8% and increases your Defense skill by 8 while a shield is equipped.",
+"Increases the damage you deal with one-handed melee weapons by 10% and increases your Defense skill by 10 while a shield is equipped."	
 		];
 i++;		
 
@@ -262,20 +258,20 @@ i++;
 
 //Shield Specialization - Protection 
 rank[i] = [
-"Increases the amount of damage absorbed by your shield by 10%.",
-"Increases the amount of damage absorbed by your shield by 20%.",
-"Increases the amount of damage absorbed by your shield by 30%."
+"Increases the amount of damage absorbed by your shield by 15% and restores 1% mana when a block occurs. This effect cannot occur more than once every second.",
+"Increases the amount of damage absorbed by your shield by 30% and restores 2% mana when a block occurs. This effect cannot occur more than once every second."
 		];
 i++;		
 
-//Anticipation - Protection
+//Blessing of Sanctuary - Protection
 rank[i] = [
-"Increases your Defense skill by 2.",
-"Increases your Defense skill by 4.",
-"Increases your Defense skill by 6.",
-"Increases your Defense skill by 8.",
-"Increases your Defense skill by 10.",
-		];
+  "<span style=text-align:left;float:left;>60 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br>Instant cast<br>Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 7 for 5 min.  In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.<br><br>\
+  &nbsp;Trainable Ranks Listed Below:<br>\
+  &nbsp;Rank 2: 85 Mana, 10 Damage Reduction<br>\
+  &nbsp;Rank 3: 110 Mana, 14 Damage Reduction<br>\
+  &nbsp;Rank 4: 145 Mana, 19 Damage Reduction<br>\
+  &nbsp;Greater (Raid): 270 Mana, 24 Damage Reduction"
+  ];
 i++;		
 
 //Improved Hammer of Justice - Protection 
@@ -294,14 +290,12 @@ rank[i] = [
 		];i++;		
 
 
-//Blessing of Sanctuary - Protection 
+//Holy Shield - Protection 
 rank[i] = [
-  "<span style=text-align:left;float:left;>60 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br>Instant cast<br>Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 7 for 5 min.  In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.<br><br>\
+  "175 Mana<br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>10 sec cooldown</span><br>Requires Shields<br>Increases chance to block by 30% for 10 sec and deals 50 Holy damage for each attack blocked while active. Each block expends a charge. 4 charges.<br><br>\
   &nbsp;Trainable Ranks Listed Below:<br>\
-  &nbsp;Rank 2: 85 Mana, 10 Damage Reduction<br>\
-  &nbsp;Rank 3: 110 Mana, 14 Damage Reduction<br>\
-  &nbsp;Rank 4: 145 Mana, 19 Damage Reduction<br>\
-  &nbsp;Greater (Raid): 270 Mana, 24 Damage Reduction"
+  &nbsp;Rank 2: 195 Mana, 95 Damage<br>\
+  &nbsp;Rank 3: 240 Mana, 130 Damage"
   ];
 i++;  
 	
@@ -316,22 +310,24 @@ rank[i] = [
 		];
 i++;
 
-//One-Handed Weapon Specialization - Protection
+//Divine Arbiter - Protection
 rank[i]=[
-"Increases the damage you deal with one-handed melee weapons by 2%.",
-"Increases the damage you deal with one-handed melee weapons by 4%.",
-"Increases the damage you deal with one-handed melee weapons by 6%.",
-"Increases the damage you deal with one-handed melee weapons by 8%.",
-"Increases the damage you deal with one-handed melee weapons by 10%."
+"While standing within Consecration, your Judgement spell will hit one additional target.",
+"While standing within Consecration, your Judgement spell will hit two additional target.",
+			];
+i++;			
+
+//Unwavering Devotion - Protection
+rank[i]=[
+"Reduces all damage taken while under the effect of Devotion Aura by 3%.",
+"Reduces all damage taken while under the effect of Devotion Aura by 6%.",
+"Reduces all damage taken while under the effect of Devotion Aura by 9%."
 			];
 i++;			
 			
-//Holy Shield - Protection
+//Valiance Aura - Protection
 rank[i] = [
-  "175 Mana<br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>10 sec cooldown</span><br>Requires Shields<br>Increases chance to block by 30% for 10 sec and deals 50 Holy damage for each attack blocked while active. Each block expends a charge. 4 charges.<br><br>\
-  &nbsp;Trainable Ranks Listed Below:<br>\
-  &nbsp;Rank 2: 195 Mana, 95 Damage<br>\
-  &nbsp;Rank 3: 240 Mana, 130 Damage"
+  "<span style=text-align:left;float:left;>Instant cast</span><br>Gives immunity to all fear effects to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.<br>This Aura requires an immense amount of focus and reduces both the movement and attack speed of the Paladin by 50% while active.<br>"
   ];
 i++;
 

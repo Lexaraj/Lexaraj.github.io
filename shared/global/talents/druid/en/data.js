@@ -70,7 +70,7 @@ talent[i] = [2, "Nature's Swiftness", 1, 1, 5, [getTalentID("Improved Healing To
 talent[i] = [2, "Gift of Nature", 5, 3, 5, [getTalentID("Insect Swarm"),1]]; i++;
 talent[i] = [2, "Improved Tranquility", 2, 4, 5]; i++;
 talent[i] = [2, "Improved Regrowth", 5, 3, 6]; i++;
-talent[i] = [2, "Innervate", 1, 2, 7, [getTalentID("Tranquil Spirit"),5]]; i++;
+talent[i] = [2, "Swiftmend", 1, 2, 7, [getTalentID("Tranquil Spirit"),5]]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -498,7 +498,7 @@ rank[i]=[
 i++;	
 
 
-//Innervate - Restoration 
+//Swiftmend - Restoration 
 rank[i]=[
 		"<span style=text-align:left;float:left;>20% of base mana</span><span style=text-align:right;float:right;>40 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>15 second cooldown</span><br>Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."
 		];

@@ -500,7 +500,7 @@ i++;
 
 //Innervate - Restoration 
 rank[i]=[
-		"<span style=text-align:left;float:left;>62 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>6 min cooldown</span><br>Increases the target's Mana regeneration by 400% and allows 100% of the target's Mana regeneration to continue while casting. Lasts 20 sec."
+		"<span style=text-align:left;float:left;>20% of base mana</span><span style=text-align:right;float:right;>40 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>15 second cooldown</span><br>Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."
 		];
 i++;
 	

@@ -446,7 +446,7 @@ i++;
 
 //Repentance - Protection
 rank[i]=[
-		"<span style=text-align:left;float:left;>60 Mana</span><span style=text-align:right;float:right;>20 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>1 min cooldown</span><br>Puts the enemy target in a state of meditation for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids."
+		"<span style=text-align:left;float:left;>60 Mana</span><span style=text-align:right;float:right;>20 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>30 sec cooldown</span><br>Puts the enemy target in a state of meditation for 30 sec. Any damage caused will awaken the target."
 		];
 i++;		
 

@@ -45,10 +45,10 @@ talent[i] = [1, "Predatory Strikes", 3, 2, 4]; i++;
 talent[i] = [1, "Blood Frenzy", 2, 3, 4, [getTalentID("Sharpened Claws"),3]]; i++;
 talent[i] = [1, "Primal Fury", 2, 4, 4, [getTalentID("Sharpened Claws"),3]]; i++;
 talent[i] = [1, "Savage Fury", 2, 1, 5]; i++;
-talent[i] = [1, "Feral Precision", 1, 3, 5, [getTalentID("Blood Frenzy"),2]]; i++;
+talent[i] = [1, "Feral Precision", 3, 3, 5, [getTalentID("Blood Frenzy"),2]]; i++;
 talent[i] = [1, "Savage Instincts", 1, 4, 5, [getTalentID("Primal Fury"),2]]; i++;
 talent[i] = [1, "Heart of the Wild", 5, 2, 6, [getTalentID("Predatory Strikes"),3]]; i++;
-talent[i] = [1, "Feline Tenacity", 2, 3, 6, [getTalentID("Feral Precision"),1]]; i++;
+talent[i] = [1, "Feline Tenacity", 2, 3, 6, [getTalentID("Feral Precision"),3]]; i++;
 talent[i] = [1, "Ursine Tenacity", 2, 4, 6, [getTalentID("Savage Instincts"),1]]; i++;
 talent[i] = [1, "Leader of the Pack", 1, 2, 7]; i++;
 
@@ -61,13 +61,13 @@ talent[i] = [2, "Furor", 5, 3, 1]; i++;
 talent[i] = [2, "Improved Healing Touch", 5, 1, 2]; i++;
 talent[i] = [2, "Nature's Focus", 5, 2, 2]; i++;
 talent[i] = [2, "Improved Enrage", 2, 3, 2]; i++;
-talent[i] = [2, "Reflection", 3, 2, 3]; i++;
-talent[i] = [2, "Insect Swarm", 1, 3, 3]; i++;
+talent[i] = [2, "Insect Swarm", 1, 2, 3]; i++;
+talent[i] = [2, "Reflection", 3, 3, 3]; i++;
 talent[i] = [2, "Subtlety", 5, 4, 3]; i++;
 talent[i] = [2, "Tranquil Spirit", 5, 2, 4]; i++;
 talent[i] = [2, "Improved Rejuvenation", 3, 4, 4]; i++;
 talent[i] = [2, "Nature's Swiftness", 1, 1, 5, [getTalentID("Improved Healing Touch"),5]]; i++;
-talent[i] = [2, "Gift of Nature", 5, 3, 5, [getTalentID("Insect Swarm"),1]]; i++;
+talent[i] = [2, "Gift of Nature", 5, 3, 5, [getTalentID("Reflection"),3]]; i++;
 talent[i] = [2, "Improved Tranquility", 2, 4, 5]; i++;
 talent[i] = [2, "Improved Regrowth", 5, 3, 6]; i++;
 talent[i] = [2, "Swiftmend", 1, 2, 7, [getTalentID("Tranquil Spirit"),5]]; i++;
@@ -92,7 +92,7 @@ i++;
 		
 //Nature's Grasp - Balance
 rank[i] = [
-		"50 Mana<br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>1 min cooldown</span><br>While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors. 1 charge. Lasts 45 sec."
+		"50 Mana<br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>1 min cooldown</span><br>While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1). 1 charge. Lasts 45 sec."
 		];
 i++;		
 
@@ -190,9 +190,9 @@ i++;
 
 //Moonglow - Balance
 rank[i] = [
-"Reduces the Mana cost of your Moonfire, Starfire, and Wrath spells by 5% and your Healing Touch, Regrowth and Rejuvenation spells by 3%.",
-"Reduces the Mana cost of your Moonfire, Starfire, and Wrath spells by 10% and your Healing Touch, Regrowth and Rejuvenation spells by 6%.",
-"Reduces the Mana cost of your Moonfire, Starfire, and Wrath spells by 15% and your Healing Touch, Regrowth and Rejuvenation spells by 9%."
+"Reduces the Mana cost of your Moonfire, Starfire, Healing Touch, Regrowth and Rejuvenation spells by 3%.",
+"Reduces the Mana cost of your Moonfire, Starfire, Healing Touch, Regrowth and Rejuvenation spells by 6%.",
+"Reduces the Mana cost of your Moonfire, Starfire, Healing Touch, Regrowth and Rejuvenation spells by 9%."
 		];		
 i++;		
 
@@ -324,13 +324,15 @@ i++;
 
 //Feral Precision - Feral 
 rank[i] = [
+		"Increases the critial strike chance of Shred ability by 5%.",
+		"Increases the critial strike chance of Shred ability by 10%.",	
 		"Increases the critial strike chance of Shred ability by 15%.",		
 		];
 i++;	
 
 //Savage Instincts - Feral 
 rank[i] = [
-		"Reduces the cooldown of Enrage ability by 30 seconds. In addition, you are immune to Fear effects while Enraged.",		
+		"<span style=text-align:left;float:left;>Uses 100% rage</span><br><span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>15 sec cooldown</span><br>Requires Bear Form, Dire Bear Form<br>Embodying the instincts of the Bear, the Druid becomes immune to Fear and Incapacitate effects Lasts 10 seconds. Consumes all Rage when used."
 		];
 i++;
 	
@@ -413,15 +415,7 @@ rank[i]=[
 "The Enrage ability now instantly generates 10 Rage"
 		];
 i++;		
-		
-//Reflection - Restoration 
-rank[i]=[
-"Allows 5% of your Mana regeneration to continue while casting",
-"Allows 10% of your Mana regeneration to continue while casting",
-"Allows 15% of your Mana regeneration to continue while casting"
-		];
-i++;		
-		
+	
 //Insect Swarm - Restoration
 rank[i]=[
 		"<span style=text-align:left;float:left;>45 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br>Instant Cast<br>The enemy target is swarmed by insects, decreasing their chance to hit by 2% and causing 66 Nature damage over 12 sec.<br><br>\
@@ -431,8 +425,16 @@ rank[i]=[
 		&nbsp;Rank 4: 140 Mana, 264 Damage<br>\
 		&nbsp;Rank 5: 160 Mana, 324 Damage"
 		];
-i++;	
-		
+i++;
+
+//Reflection - Restoration 
+rank[i]=[
+"Allows 5% of your Mana regeneration to continue while casting",
+"Allows 10% of your Mana regeneration to continue while casting",
+"Allows 15% of your Mana regeneration to continue while casting"
+		];
+i++;		
+	
 //Subtlety - Restoration
 rank[i]=[
 "Reduces the threat generated by your Healing spells by 4%.",
@@ -500,7 +502,7 @@ i++;
 
 //Swiftmend - Restoration 
 rank[i]=[
-		"<span style=text-align:left;float:left;>20% of base mana</span><span style=text-align:right;float:right;>40 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>15 second cooldown</span><br>Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."
+		"<span style=text-align:left;float:left;>20% of base mana</span><span style=text-align:right;float:right;>40 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>15 second cooldown</span><br>Empowers a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."
 		];
 i++;
 	

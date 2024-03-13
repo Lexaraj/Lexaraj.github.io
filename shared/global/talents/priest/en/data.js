@@ -68,10 +68,10 @@ t++;
 
 //shadow talents
 talent[i] = [2, "Spirit Tap", 5, 2, 1]; i++;
-talent[i] = [2, "Blackout", 5, 3, 1]; i++;
+talent[i] = [2, "Shadow Focus", 5, 3, 1]; i++;
 talent[i] = [2, "Shadow Affinity", 3, 1, 2]; i++;
 talent[i] = [2, "Improved Shadow Word: Pain", 2, 2, 2]; i++;
-talent[i] = [2, "Shadow Focus", 5, 3, 2]; i++;
+talent[i] = [2, "Blackout", 5, 3, 2]; i++;
 talent[i] = [2, "Improved Psychic Scream", 2, 1, 3]; i++;
 talent[i] = [2, "Improved Mind Blast", 5, 2, 3]; i++;
 talent[i] = [2, "Mind Flay", 1, 3, 3]; i++;
@@ -450,17 +450,17 @@ rank[i]=[
 			];
 
 i++;			
-			
-//Blackout - Shadow
+
+//Shadow Focus - Shadow
 rank[i]=[
-			"Gives your Shadow damage spells a 2% chance to stun the target for 3 sec.",
-			"Gives your Shadow damage spells a 4% chance to stun the target for 3 sec.",
-			"Gives your Shadow damage spells a 6% chance to stun the target for 3 sec.",
-			"Gives your Shadow damage spells a 8% chance to stun the target for 3 sec.",
-			"Gives your Shadow damage spells a 10% chance to stun the target for 3 sec."
+			"Reduces your target's chance to resist your Shadow spells by 2%.",
+			"Reduces your target's chance to resist your Shadow spells by 4%.",
+			"Reduces your target's chance to resist your Shadow spells by 6%.",
+			"Reduces your target's chance to resist your Shadow spells by 8%.",
+			"Reduces your target's chance to resist your Shadow spells by 10%."
 		];
 
-i++;		
+i++;				
 		
 //Shadow Affinity - Shadow
 rank[i]=[
@@ -478,17 +478,18 @@ rank[i]=[
 		];
 
 i++;		
-		
-//Shadow Focus - Shadow
+
+//Blackout - Shadow
 rank[i]=[
-			"Reduces your target's chance to resist your Shadow spells by 2%.",
-			"Reduces your target's chance to resist your Shadow spells by 4%.",
-			"Reduces your target's chance to resist your Shadow spells by 6%.",
-			"Reduces your target's chance to resist your Shadow spells by 8%.",
-			"Reduces your target's chance to resist your Shadow spells by 10%."
+			"Gives your Shadow damage spells a 2% chance to stun the target for 3 sec.",
+			"Gives your Shadow damage spells a 4% chance to stun the target for 3 sec.",
+			"Gives your Shadow damage spells a 6% chance to stun the target for 3 sec.",
+			"Gives your Shadow damage spells a 8% chance to stun the target for 3 sec.",
+			"Gives your Shadow damage spells a 10% chance to stun the target for 3 sec."
 		];
 
 i++;		
+
 		
 //Improved Psychic Scream - Shadow
 rank[i]=[
@@ -563,7 +564,7 @@ i++;
 		
 //Vampiric Embrace
 rank[i]=[
-			"<span style=text-align:left;float:left;>40 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>10 sec cooldown</span><br>Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow damage you deal for 1 min."
+			"<span style=text-align:left;float:left;>40 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>10 sec cooldown</span><br>Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow damage you deal for 1 min. You will also gain Mana equal to 10% of the Shadow damage you deal to the target for this duration."
 		];
 
 i++;		

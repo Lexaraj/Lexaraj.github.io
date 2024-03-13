@@ -463,9 +463,9 @@ i++;
 		
 //Improved Sap - Subtlety
 rank[i]=[
-"Gives you a 30% chance to return to stealth mode after using your Sap ability.",
-"Gives you a 60% chance to return to stealth mode after using your Sap ability.",
-"Gives you a 90% chance to return to stealth mode after using your Sap ability."
+"Increase the range of Sap by 1 yard and reduces it's Energy cost by 15.",
+"Increase the range of Sap by 2 yards and reduces it's Energy cost by 30.",
+"Increase the range of Sap by 3 yards and reduces it's Energy cost by 45."
 		];
 i++;		
 		

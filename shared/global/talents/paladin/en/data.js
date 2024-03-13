@@ -31,11 +31,11 @@ treeStartStop[t] = i -1;
 t++;
 
 //protection talents
-talent[i] = [1, "Toughness", 5, 2, 1]; i++;
+talent[i] = [1, "Precision", 5, 2, 1]; i++;
 talent[i] = [1, "Redoubt", 5, 3, 1]; i++;
-talent[i] = [1, "Precision", 3, 1, 2]; i++;
+talent[i] = [1, "Ardent Defender", 5, 1, 2]; i++;
 talent[i] = [1, "Guardian's Favor", 2, 2, 2]; i++;
-talent[i] = [1, "Ardent Defender", 5, 4, 2]; i++;
+talent[i] = [1, "Toughness", 5, 4, 2]; i++;
 talent[i] = [1, "Blessing of Kings", 1, 1, 3]; i++;
 talent[i] = [1, "Improved Righteous Fury", 3, 2, 3]; i++;
 talent[i] = [1, "Shield Specialization", 2, 3, 3, [getTalentID("Redoubt"),5]]; i++;
@@ -44,7 +44,6 @@ talent[i] = [1, "Improved Hammer of Justice", 3, 2, 4]; i++;
 talent[i] = [1, "Improved Concentration Aura", 3, 3, 4]; i++;
 talent[i] = [1, "Holy Shield", 1, 2, 5]; i++;
 talent[i] = [1, "Reckoning", 5, 3, 5]; i++;
-talent[i] = [1, "Divine Arbiter", 2, 1, 6]; i++;
 talent[i] = [1, "Unwavering Devotion", 3, 3, 6]; i++;
 talent[i] = [1, "Valiance Aura", 1, 2, 7, [getTalentID("Holy Shield"),1]]; i++;
 
@@ -66,7 +65,8 @@ talent[i] = [2, "Improved Retribution Aura", 2, 3, 4]; i++;
 talent[i] = [2, "Two-Handed Weapon Specialization", 3, 1, 5]; i++;
 talent[i] = [2, "Sanctity Aura", 1, 3, 5]; i++;
 talent[i] = [2, "Vengeance", 5, 2, 6, [getTalentID("Conviction"),5]]; i++;
-talent[i] = [2, "Repentance", 1, 2, 7]; i++;
+talent[i] = [2, "Repentance", 1, 3, 6]; i++;
+talent[i] = [2, "Sacred Strike", 1, 2, 7]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -126,7 +126,7 @@ i++;
 
 //Consecration - Retribution 
 rank[i]=[
-"Reduces the mana cost of Consecration by 50%."
+"Reduces the mana cost of your Consecration spell by 50%."
 		];
 i++;  
 	
@@ -197,16 +197,16 @@ rank[i] = [
 i++;
 
 
-//Toughness - Protection 
+//Precision - Protection
 rank[i] = [
-		"Increases your armor value from items by 2%.",
-		"Increases your armor value from items by 4%.",
-		"Increases your armor value from items by 6%.",
-		"Increases your armor value from items by 8%.",
-		"Increases your armor value from items by 10%."		
+"Increases your chance to hit with melee weapons and spells by 1%.",
+"Increases your chance to hit with melee weapons and spells by 2%.",
+"Increases your chance to hit with melee weapons and spells by 3%.",
+"Increases your chance to hit with melee weapons and spells by 4%.",
+"Increases your chance to hit with melee weapons and spells by 5%."
 		];
-i++;		
-
+i++;	
+	
 //Redoubt - Protection
 rank[i] = [
 "Successful melee or ranged attacks against you have a 2% chance to increase your chance to block by 6%. Lasts 10 sec or 5 blocks.",
@@ -217,11 +217,13 @@ rank[i] = [
 		];
 i++;
 
-//Precision - Protection
+//Ardent Defender - Protection 
 rank[i] = [
-"Increases your chance to hit with melee weapons and spells by 1%.",
-"Increases your chance to hit with melee weapons and spells by 2%.",
-"Increases your chance to hit with melee weapons and spells by 3%."
+"Increases the damage you deal with one-handed melee weapons by 2% and increases your Defense skill by 2.",
+"Increases the damage you deal with one-handed melee weapons by 4% and increases your Defense skill by 4.",
+"Increases the damage you deal with one-handed melee weapons by 6% and increases your Defense skill by 6.",
+"Increases the damage you deal with one-handed melee weapons by 8% and increases your Defense skill by 8.",
+"Increases the damage you deal with one-handed melee weapons by 10% and increases your Defense skill by 10."	
 		];
 i++;		
 
@@ -232,15 +234,13 @@ rank[i] = [
 		];		
 i++;		
 
-//Ardent Defender - Protection 
+//Toughness - Protection 
 rank[i] = [
-"Increases the damage you deal with one-handed melee weapons by 2% and increases your Defense skill by 2 while a shield is equipped.",
-"Increases the damage you deal with one-handed melee weapons by 4% and increases your Defense skill by 4 while a shield is equipped.",
-"Increases the damage you deal with one-handed melee weapons by 6% and increases your Defense skill by 6 while a shield is equipped.",
-"Increases the damage you deal with one-handed melee weapons by 8% and increases your Defense skill by 8 while a shield is equipped.",
-"Increases the damage you deal with one-handed melee weapons by 10% and increases your Defense skill by 10 while a shield is equipped."	
+		"Increases your armor value from items by 3%.",
+		"Increases your armor value from items by 6%.",
+		"Increases your armor value from items by 10%."		
 		];
-i++;		
+i++;			
 
 //Blessing of Kings - Retribution 
 rank[i]=[
@@ -302,26 +302,19 @@ i++;
 
 //Reckoning - Protection
 rank[i] = [
-		"Gives you a 20% chance to gain an extra attack after being the victim of a critical strike.",
-		"Gives you a 40% chance to gain an extra attack after being the victim of a critical strike.",
-		"Gives you a 60% chance to gain an extra attack after being the victim of a critical strike.",
-		"Gives you a 80% chance to gain an extra attack after being the victim of a critical strike.",
-		"Gives you a 100% chance to gain an extra attack after being the victim of a critical strike."						
+		"Gives you a 4% chance to gain an extra attack after a successful block.",
+		"Gives you a 8% chance to gain an extra attack after a successful block.",
+		"Gives you a 12% chance to gain an extra attack after a successful block.",
+		"Gives you a 16% chance to gain an extra attack after a successful block.",
+		"Gives you a 20% chance to gain an extra attack after a successful block."						
 		];
 i++;
 
-//Divine Arbiter - Protection
-rank[i]=[
-"While standing within Consecration, your Judgement spell will hit one additional target.",
-"While standing within Consecration, your Judgement spell will hit two additional target.",
-			];
-i++;			
-
 //Unwavering Devotion - Protection
 rank[i]=[
-"Reduces all damage taken while under the effect of Devotion Aura by 3%.",
-"Reduces all damage taken while under the effect of Devotion Aura by 6%.",
-"Reduces all damage taken while under the effect of Devotion Aura by 9%."
+"Reduces all damage taken by 2% for all targets affected by your Devotion Aura.",
+"Reduces all damage taken by 4% for all targets affected by your Devotion Aura.",
+"Reduces all damage taken by 6% for all targets affected by your Devotion Aura."
 			];
 i++;			
 			
@@ -406,8 +399,8 @@ i++;
 		
 //Pursuit of Justice - Retribution
 rank[i]=[
-"Increases movement and mounted movement speed by 4%. This does not stack with other movement speed increasing effects.",
-"Increases movement and mounted movement speed by 8%. This does not stack with other movement speed increasing effects."
+"Increases movement and mounted movement speed by 5%. This does not stack with other movement speed increasing effects.",
+"Increases movement and mounted movement speed by 10%. This does not stack with other movement speed increasing effects."
 		];
 i++;		
 		
@@ -457,6 +450,11 @@ rank[i]=[
 		];
 i++;		
 
+//Sacred Strike - Retribution
+rank[i]=[
+		"<span style=text-align:left;float:left;>6% base Mana</span><span style=text-align:right;float:right;>5 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>6 sec cooldown</span><br>Instantly strike the target with the Light, dealing 75% weapon damage as Holy damage. In addition, increases your critical strike by 10% for you next 3 attacks. This effect lasts 8 seconds."
+		];
+i++;
 
 //Retribution Talents End^^
 

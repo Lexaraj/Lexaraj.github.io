@@ -67,10 +67,10 @@ t++;
 
 
 nltalent[i] = ["Spirit Tap"]; i++;
-nltalent[i] = ["Blackout"]; i++;
+nltalent[i] = ["Shadow Focus"]; i++;
 nltalent[i] = ["Shadow Affinity"]; i++;
 nltalent[i] = ["Improved Shadow Word: Pain"]; i++;
-nltalent[i] = ["Shadow Focus"]; i++;
+nltalent[i] = ["Blackout"]; i++;
 nltalent[i] = ["Improved Psychic Scream"]; i++;
 nltalent[i] = ["Improved Mind Blast"]; i++;
 nltalent[i] = ["Mind Flay"]; i++;

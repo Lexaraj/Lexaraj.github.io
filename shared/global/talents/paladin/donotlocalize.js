@@ -26,11 +26,11 @@ nltalent[i] = ["Holy Power"]; i++;
 nltalent[i] = ["Holy Shock"]; i++;
 
 //protection talents
-nltalent[i] = ["Toughness"]; i++;
-nltalent[i] = ["Redoubt"]; i++;
 nltalent[i] = ["Precision"]; i++;
-nltalent[i] = ["Guardians Favor"]; i++;
+nltalent[i] = ["Redoubt"]; i++;
 nltalent[i] = ["Ardent Defender"]; i++;
+nltalent[i] = ["Guardians Favor"]; i++;
+nltalent[i] = ["Toughness"]; i++;
 nltalent[i] = ["Blessing of Kings"]; i++;
 nltalent[i] = ["Improved Righteous Fury"]; i++;
 nltalent[i] = ["Shield Specialization"]; i++;
@@ -39,7 +39,6 @@ nltalent[i] = ["Improved Hammer of Justice"]; i++;
 nltalent[i] = ["Improved Concentration Aura"]; i++;
 nltalent[i] = ["Holy Shield"]; i++;
 nltalent[i] = ["Reckoning"]; i++;
-nltalent[i] = ["Divine Arbiter"]; i++;
 nltalent[i] = ["Unwavering Devotion"]; i++;
 nltalent[i] = ["Valiance Aura"]; i++;
 
@@ -59,6 +58,7 @@ nltalent[i] = ["Two-Handed Weapon Specialization"]; i++;
 nltalent[i] = ["Sanctity Aura"]; i++;
 nltalent[i] = ["Vengeance"]; i++;
 nltalent[i] = ["Repentance"]; i++;
+nltalent[i] = ["Sacred Strike"]; i++;
 
 /*
      FILE ARCHIVED ON 02:40:00 Jul 17, 2006 AND RETRIEVED FROM THE

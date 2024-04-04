@@ -10,21 +10,23 @@ nltree[i] = "Restoration"; i++;
 
 i = 0;
 
+nltalent[i] = ["Nature's Guidance"]; i++;
 nltalent[i] = ["Convection"]; i++;
 nltalent[i] = ["Concussion"]; i++;
 nltalent[i] = ["Earth's Grasp"]; i++;
 nltalent[i] = ["Elemental Warding"]; i++; 
 nltalent[i] = ["Call of Flame"]; i++;
-nltalent[i] = ["Elemental Focus"]; i++;
+nltalent[i] = ["Elemental Devastation"]; i++;
 nltalent[i] = ["Reverberation"]; i++;
 nltalent[i] = ["Call of Thunder"]; i++;
+nltalent[i] = ["Elemental Reach"]; i++;
 nltalent[i] = ["Improved Fire Nova Totem"]; i++;
 nltalent[i] = ["Eye of the Storm"]; i++;
-nltalent[i] = ["Elemental Devastation"]; i++;
 nltalent[i] = ["Storm Reach"]; i++;
 nltalent[i] = ["Elemental Fury"]; i++;
 nltalent[i] = ["Lightning Mastery"]; i++;
 nltalent[i] = ["Elemental Mastery"]; i++;
+nltalent[i] = ["Lightning Overload"]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -38,14 +40,14 @@ nltalent[i] = ["Thundering Strikes"]; i++;
 nltalent[i] = ["Improved Ghost Wolf"]; i++;
 nltalent[i] = ["Improved Lightning Shield"]; i++;
 nltalent[i] = ["Enhancing Totems"]; i++;
-nltalent[i] = ["Two-Handed Axes and Maces"]; i++;
+nltalent[i] = ["Weapon Mastery"]; i++;
 nltalent[i] = ["Anticipation"]; i++;
 nltalent[i] = ["Flurry"]; i++;
 nltalent[i] = ["Toughness"]; i++;
 nltalent[i] = ["Improved Weapon Totems"]; i++;
 nltalent[i] = ["Elemental Weapons"]; i++;
-nltalent[i] = ["Parry"]; i++;
-nltalent[i] = ["Weapon Mastery"]; i++;
+nltalent[i] = ["Shamanistic Focus"]; i++;
+nltalent[i] = ["Elemental Impact"]; i++;
 nltalent[i] = ["Stormstrike"]; i++;
 
 treeStartStop[t] = i -1;
@@ -54,16 +56,15 @@ t++;
 //restoration talents
 
 nltalent[i] = ["Improved Healing Wave"]; i++;
-nltalent[i] = ["Tidal Focus"]; i++;
+nltalent[i] = ["Tidal Mastery"]; i++;
 nltalent[i] = ["Improved Reincarnation"]; i++;
 nltalent[i] = ["Ancestral Healing"]; i++;
 nltalent[i] = ["Totemic Focus"]; i++;
-nltalent[i] = ["Nature's Guidance"]; i++;
+nltalent[i] = ["Healing Grace"]; i++;
 nltalent[i] = ["Healing Focus"]; i++;
 nltalent[i] = ["Totemic Mastery"]; i++;
-nltalent[i] = ["Healing Grace"]; i++;
 nltalent[i] = ["Restorative Totems"]; i++;
-nltalent[i] = ["Tidal Mastery"]; i++;
+nltalent[i] = ["Tidal Focus"]; i++;
 nltalent[i] = ["Healing Way"]; i++;
 nltalent[i] = ["Nature's Swiftness"]; i++;
 nltalent[i] = ["Purification"]; i++;

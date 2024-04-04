@@ -350,7 +350,7 @@ i++;
 
 //Stormstrike - Enhancement 
 rank[i]=[
-		"<span style=text-align:left;float:left;>319 Mana</span><span style=text-align:right;float:right;>9 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>20 sec cooldown</span><br>Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec."
+		"<span style=text-align:left;float:left;>10% base Mana</span><span style=text-align:right;float:right;>9 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>6 sec cooldown</span><br>An electrically charged strike that deals 75% weapon damage as Nature damage to the target. In addition, all Nature damage taken by the target is increased by 10%. Lasts 20 sec."
 		];
 i++;		
 

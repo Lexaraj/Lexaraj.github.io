@@ -234,11 +234,11 @@ i++;
 
 //Feral Aggression - Feral
 rank[i] = [
-"Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite and Rip by 3%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite and Rip by 6%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite and Rip by 9%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite and Rip by 12%.",
-"Increases the Attack Power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite and Rip by 15%."
+"Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite by 3%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite by 6%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite by 9%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite by 12%.",
+"Increases the Attack Power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite by 15%."
 		];
 i++;
 

@@ -62,7 +62,7 @@ nltalent[i] = ["Preparation"]; i++;
 nltalent[i] = ["Dirty Deeds"]; i++;
 nltalent[i] = ["Hemorrhage"]; i++;
 nltalent[i] = ["Deadliness"]; i++;
-nltalent[i] = ["Premeditation"]; i++;
+nltalent[i] = ["From the Shadows"]; i++;
 /*
      FILE ARCHIVED ON 06:24:19 Oct 24, 2006 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 20:24:00 Oct 16, 2021.

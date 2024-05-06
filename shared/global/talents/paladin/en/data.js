@@ -39,9 +39,9 @@ talent[i] = [1, "Toughness", 3, 4, 2]; i++;
 talent[i] = [1, "Blessing of Kings", 1, 1, 3]; i++;
 talent[i] = [1, "Improved Righteous Fury", 3, 2, 3]; i++;
 talent[i] = [1, "Shield Specialization", 2, 3, 3, [getTalentID("Redoubt"),5]]; i++;
-talent[i] = [1, "Blessing of Sanctuary", 1, 4, 3]; i++;
 talent[i] = [1, "Improved Hammer of Justice", 3, 2, 4]; i++;
 talent[i] = [1, "Improved Concentration Aura", 3, 3, 4]; i++;
+talent[i] = [1, "Blessing of Sanctuary", 1, 1, 5]; i++;
 talent[i] = [1, "Holy Shield", 1, 2, 5]; i++;
 talent[i] = [1, "Reckoning", 5, 3, 5]; i++;
 talent[i] = [1, "Unwavering Devotion", 3, 3, 6]; i++;
@@ -261,18 +261,7 @@ rank[i] = [
 "Increases the amount of damage absorbed by your shield by 15% and restores 1% mana when a block occurs. This effect cannot occur more than once every second.",
 "Increases the amount of damage absorbed by your shield by 30% and restores 2% mana when a block occurs. This effect cannot occur more than once every second."
 		];
-i++;		
-
-//Blessing of Sanctuary - Protection
-rank[i] = [
-  "<span style=text-align:left;float:left;>60 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br>Instant cast<br>Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 7 for 5 min.  In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.<br><br>\
-  &nbsp;Trainable Ranks Listed Below:<br>\
-  &nbsp;Rank 2: 85 Mana, 10 Damage Reduction<br>\
-  &nbsp;Rank 3: 110 Mana, 14 Damage Reduction<br>\
-  &nbsp;Rank 4: 145 Mana, 19 Damage Reduction<br>\
-  &nbsp;Greater (Raid): 270 Mana, 24 Damage Reduction"
-  ];
-i++;		
+i++;			
 
 //Improved Hammer of Justice - Protection 
 rank[i] = [
@@ -290,6 +279,17 @@ rank[i] = [
 		];i++;		
 
 
+//Blessing of Sanctuary - Protection
+rank[i] = [
+  "<span style=text-align:left;float:left;>60 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br>Instant cast<br>Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 7 for 5 min.  In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.<br><br>\
+  &nbsp;Trainable Ranks Listed Below:<br>\
+  &nbsp;Rank 2: 85 Mana, 10 Damage Reduction<br>\
+  &nbsp;Rank 3: 110 Mana, 14 Damage Reduction<br>\
+  &nbsp;Rank 4: 145 Mana, 19 Damage Reduction<br>\
+  &nbsp;Greater (Raid): 270 Mana, 24 Damage Reduction"
+  ];
+i++;	
+
 //Holy Shield - Protection 
 rank[i] = [
   "175 Mana<br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>10 sec cooldown</span><br>Requires Shields<br>Increases chance to block by 30% for 10 sec and deals 50 Holy damage for each attack blocked while active. Each block expends a charge. 4 charges.<br><br>\
@@ -302,11 +302,11 @@ i++;
 
 //Reckoning - Protection
 rank[i] = [
-		"Gives you a 4% chance to gain an extra attack after a successful block.",
-		"Gives you a 8% chance to gain an extra attack after a successful block.",
-		"Gives you a 12% chance to gain an extra attack after a successful block.",
-		"Gives you a 16% chance to gain an extra attack after a successful block.",
-		"Gives you a 20% chance to gain an extra attack after a successful block."						
+		"Gives you a 10% chance to gain an extra attack after a successful block.",
+		"Gives you a 20% chance to gain an extra attack after a successful block.",
+		"Gives you a 30% chance to gain an extra attack after a successful block.",
+		"Gives you a 40% chance to gain an extra attack after a successful block.",
+		"Gives you a 50% chance to gain an extra attack after a successful block."						
 		];
 i++;
 

@@ -62,14 +62,14 @@ talent[i] = [2, "Initiative", 3, 1, 3]; i++;
 talent[i] = [2, "Ghostly Strike", 1, 2, 3]; i++;
 talent[i] = [2, "Improved Ambush", 3, 3, 3]; i++;
 talent[i] = [2, "Setup", 3, 1, 4]; i++;
-talent[i] = [2, "Improved Sap", 2, 2, 4]; i++;
+talent[i] = [2, "Improved Sap", 3, 2, 4]; i++;
 talent[i] = [2, "Serrated Blades", 3, 3, 4]; i++;
 talent[i] = [2, "Heightened Senses", 2, 1, 5]; i++;
 talent[i] = [2, "Preparation", 1, 2, 5]; i++;
 talent[i] = [2, "Dirty Deeds", 2, 3, 5]; i++;
 talent[i] = [2, "Hemorrhage", 1, 4, 5, [getTalentID("Serrated Blades"),3]]; i++;
 talent[i] = [2, "Deadliness", 5, 3, 6]; i++;
-talent[i] = [2, "From the Shadows", 1, 2, 7, [getTalentID("Preparation"),1]]; i++;
+talent[i] = [2, "Premeditation", 1, 2, 7, [getTalentID("Preparation"),1]]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -433,9 +433,9 @@ i++;
 	
 //Initiative - Subtlety 
 rank[i]=[
-"Gives you a 33% chance to add an additional combo point to your target when using your Ambush or Garrote ability.",
-"Gives you a 66% chance to add an additional combo point to your target when using your Ambush or Garrote ability.",
-"Gives you a 100% chance to add an additional combo point to your target when using your Ambush or Garrote ability."
+"Gives you a 25% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
+"Gives you a 50% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
+"Gives you a 75% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability."
 		];
 i++;		
 		
@@ -463,8 +463,9 @@ i++;
 		
 //Improved Sap - Subtlety
 rank[i]=[
-"Increase the range of Sap by 1 yard and reduces it's Energy cost by 20.",
-"Increase the range of Sap by 2 yards and reduces it's Energy cost by 40."
+"Gives you a 30% chance to return to stealth mode after using your Sap ability.",
+"Gives you a 60% chance to return to stealth mode after using your Sap ability.",
+"Gives you a 90% chance to return to stealth mode after using your Sap ability."
 		];
 i++;		
 		
@@ -498,7 +499,10 @@ i++;
 		
 //Hemorrhage - Subtlety 
 rank[i]=[
-			"<span style=text-align:left;float:left;>35 Energy</span><span style=text-align:right;float:right;>5 yd range</span><br>Instant<br>Requires Melee Weapon<br>An instant strike that damages the opponent and causes the target to hemorrhage, increasing any damage dealt to the target by 3%. Lasts 30 charges or 15 sec. Awards 1 combo point.<br>"
+			"<span style=text-align:left;float:left;>35 Energy</span><span style=text-align:right;float:right;>5 yd range</span><br>Instant<br>Requires Melee Weapon<br>An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 3. Lasts 30 charges or 15 sec. Awards 1 combo point.<br><br>\
+			&nbsp;Trainable Ranks Listed Below:<br>\
+			&nbsp;Rank 2: 5 Damage<br>\
+			&nbsp;Rank 3: 7 Damage"
 		];
 i++;		
 		
@@ -514,9 +518,9 @@ rank[i]=[
 i++;		
 		
 	
-//From the Shadows - Subtlety 
+//Premeditation - Subtlety 
 rank[i]=[
-			"Your finishing moves have a 10% chance per combo point to allow you to slip into the shadows for 5 seconds, allowing you to use abilities that require Stealth. This effect cannot occur more than once every 15 seconds."
+			"20 yd range<br><span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>2 min cooldown</span><br><span style=color:eb0504>Requires Stealth</span><br>When used, adds 2 combo points to your target. You must add to or use those combo points within 10 sec or the combo points are lost."
 		];
 i++;	
 		

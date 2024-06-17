@@ -57,19 +57,19 @@ talent[i] = [2, "Master of Deception", 5, 2, 1]; i++;
 talent[i] = [2, "Opportunity", 5, 3, 1]; i++;
 talent[i] = [2, "Sleight of Hand", 2, 1, 2]; i++;
 talent[i] = [2, "Elusiveness", 2, 2, 2]; i++;
-talent[i] = [2, "Camouflage", 5, 3, 2]; i++;
+talent[i] = [2, "Camouflage", 3, 3, 2]; i++;
 talent[i] = [2, "Initiative", 3, 1, 3]; i++;
-talent[i] = [2, "Ghostly Strike", 1, 2, 3]; i++;
+talent[i] = [2, "Improved Sap", 2, 2, 3]; i++;
 talent[i] = [2, "Improved Ambush", 3, 3, 3]; i++;
 talent[i] = [2, "Setup", 3, 1, 4]; i++;
-talent[i] = [2, "Improved Sap", 3, 2, 4]; i++;
+talent[i] = [2, "Preparation", 1, 2, 4]; i++;
 talent[i] = [2, "Serrated Blades", 3, 3, 4]; i++;
 talent[i] = [2, "Heightened Senses", 2, 1, 5]; i++;
-talent[i] = [2, "Preparation", 1, 2, 5]; i++;
+talent[i] = [2, "Premeditation", 1, 2, 5, [getTalentID("Preparation"),1]]; i++;
 talent[i] = [2, "Dirty Deeds", 2, 3, 5]; i++;
 talent[i] = [2, "Hemorrhage", 1, 4, 5, [getTalentID("Serrated Blades"),3]]; i++;
 talent[i] = [2, "Deadliness", 5, 3, 6]; i++;
-talent[i] = [2, "Premeditation", 1, 2, 7, [getTalentID("Preparation"),1]]; i++;
+talent[i] = [2, "From the Shadows", 1, 2, 7, [getTalentID("Premeditation"),1]]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -422,26 +422,25 @@ i++;
 
 //Camouflage - Subtlety 
 rank[i]=[
-"Increases your speed while stealthed by 3% and reduces the cooldown of your Stealth ability by 1 sec.",
-"Increases your speed while stealthed by 6% and reduces the cooldown of your Stealth ability by 2 sec.",
-"Increases your speed while stealthed by 9% and reduces the cooldown of your Stealth ability by 3 sec.",
-"Increases your speed while stealthed by 12% and reduces the cooldown of your Stealth ability by 4 sec.",
-"Increases your speed while stealthed by 15% and reduces the cooldown of your Stealth ability by 5 sec."
+"Increases your speed while stealthed by 5% and reduces the cooldown of your Stealth ability by 1 sec.",
+"Increases your speed while stealthed by 10% and reduces the cooldown of your Stealth ability by 2 sec.",
+"Increases your speed while stealthed by 15% and reduces the cooldown of your Stealth ability by 3 sec."
 		];
 i++;		
 		
 	
 //Initiative - Subtlety 
 rank[i]=[
-"Gives you a 25% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
-"Gives you a 50% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
-"Gives you a 75% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability."
+"Gives you a 33% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
+"Gives you a 66% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
+"Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability."
 		];
 i++;		
 		
-//Ghostly Strike - Subtlety
+//Improved Sap - Subtlety
 rank[i]=[
-			"<span style=text-align:left;float:left;>40 Energy</span><span style=text-align:right;float:right;>5 yd range</span><br><span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>20 sec cooldown</span><br>A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point."
+"Gives you a 50% chance to return to stealth mode after using your Sap ability and lowers it's energy cost by 20.",
+"Gives you a 100% chance to return to stealth mode after using your Sap ability and lowers it's energy cost by 40."
 		];
 i++;		
 		
@@ -461,11 +460,9 @@ rank[i]=[
 		];
 i++;		
 		
-//Improved Sap - Subtlety
+//Preparation - Subtlety 
 rank[i]=[
-"Gives you a 30% chance to return to stealth mode after using your Sap ability.",
-"Gives you a 60% chance to return to stealth mode after using your Sap ability.",
-"Gives you a 90% chance to return to stealth mode after using your Sap ability."
+			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>10 min cooldown</span><br>When activated, this ability immediately finishes the cooldown on your other Rogue abilities."
 		];
 i++;		
 		
@@ -484,9 +481,9 @@ rank[i]=[
 		];
 i++;			
 		
-//Preparation - Subtlety 
+//Premeditation - Subtlety 
 rank[i]=[
-			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>10 min cooldown</span><br>When activated, this ability immediately finishes the cooldown on your other Rogue abilities."
+			"20 yd range<br><span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>2 min cooldown</span><br><span style=color:eb0504>Requires Stealth</span><br>When used, adds 2 combo points to your target. You must add to or use those combo points within 10 sec or the combo points are lost."
 		];
 i++;		
 	
@@ -518,9 +515,9 @@ rank[i]=[
 i++;		
 		
 	
-//Premeditation - Subtlety 
+//From the Shadows - Subtlety 
 rank[i]=[
-			"20 yd range<br><span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>2 min cooldown</span><br><span style=color:eb0504>Requires Stealth</span><br>When used, adds 2 combo points to your target. You must add to or use those combo points within 10 sec or the combo points are lost."
+			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>30 sec cooldown</span><br>Partially conceal yourself in the shadows for 10 seconds, allowing your next Ambush, Cheap Shot, Garrote, Sap, Premeditation, or Pickpocket to be used regardless of stealth. In addition, your chance to dodge is increased by 15% while concealed."
 		];
 i++;	
 		

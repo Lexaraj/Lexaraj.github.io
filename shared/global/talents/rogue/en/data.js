@@ -59,7 +59,7 @@ talent[i] = [2, "Sleight of Hand", 2, 1, 2]; i++;
 talent[i] = [2, "Elusiveness", 2, 2, 2]; i++;
 talent[i] = [2, "Camouflage", 3, 3, 2]; i++;
 talent[i] = [2, "Initiative", 3, 1, 3]; i++;
-talent[i] = [2, "Improved Sap", 2, 2, 3]; i++;
+talent[i] = [2, "Ghostly Strike", 1, 2, 3]; i++;
 talent[i] = [2, "Improved Ambush", 3, 3, 3]; i++;
 talent[i] = [2, "Setup", 3, 1, 4]; i++;
 talent[i] = [2, "Preparation", 1, 2, 4]; i++;
@@ -414,9 +414,8 @@ i++;
 		
 //Elusiveness - Subtlety 
 rank[i]=[
-"Reduces the cooldown of your Vanish and Blind abilities by 45 sec.",
-"Reduces the cooldown of your Vanish and Blind abilities by 1.5 min.",
-"Reduces the cooldown of your Evasion, Vanish, and Blind abilities by 1.3 min."
+"Reduces the cooldown of your Vanish and Blind abilities by 45 sec. and gives you a 50% chance to return to stealth mode after using your Sap ability.",
+"Reduces the cooldown of your Vanish and Blind abilities by 1.5 min. and gives you a 100% chance to return to stealth mode after using your Sap ability."
 		];
 i++;		
 
@@ -437,12 +436,11 @@ rank[i]=[
 		];
 i++;		
 		
-//Improved Sap - Subtlety
+//Ghostly Strike - Subtlety
 rank[i]=[
-"Gives you a 50% chance to return to stealth mode after using your Sap ability and lowers it's energy cost by 20.",
-"Gives you a 100% chance to return to stealth mode after using your Sap ability and lowers it's energy cost by 40."
+			"<span style=text-align:left;float:left;>40 Energy</span><span style=text-align:right;float:right;>5 yd range</span><br><span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>20 sec cooldown</span><br>A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point."
 		];
-i++;		
+i++;				
 		
 //Improved Ambush - Subtlety
 rank[i]=[
@@ -517,7 +515,7 @@ i++;
 	
 //From the Shadows - Subtlety 
 rank[i]=[
-			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>30 sec cooldown</span><br>Partially conceal yourself in the shadows for 10 seconds, allowing your next Ambush, Cheap Shot, Garrote, Sap, Premeditation, or Pickpocket to be used regardless of stealth. In addition, your chance to dodge is increased by 15% while concealed."
+			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>30 sec cooldown</span><br>Partially conceal yourself in the shadows, allowing you to use abilities requiring stealth. Effect ends after 10 seconds or until an offensive stealth ability is used."
 		];
 i++;	
 		

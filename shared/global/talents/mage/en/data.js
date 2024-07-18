@@ -12,19 +12,21 @@ i = 0;
 
 talent[i] = [0, "Arcane Subtlety", 2, 1, 1]; i++;
 talent[i] = [0, "Arcane Focus", 5, 2, 1]; i++;
-talent[i] = [0, "Improved Arcane Missiles", 5, 3, 1]; i++;
+talent[i] = [0, "Improved Arcane Missiles", 3, 3, 1]; i++;
 talent[i] = [0, "Wand Specialization", 2, 1, 2]; i++; 
 talent[i] = [0, "Magic Absorption", 5, 2, 2]; i++;
 talent[i] = [0, "Arcane Concentration", 5, 3, 2]; i++;
-talent[i] = [0, "Magic Attunement", 2, 1, 3]; i++;
-talent[i] = [0, "Improved Arcane Explosion", 3, 2, 3]; i++;
+talent[i] = [0, "Arcane Impact", 2, 1, 3]; i++;
+talent[i] = [0, "Arcane Attunement", 2, 2, 3]; i++;
 talent[i] = [0, "Arcane Resilience", 1, 3, 3]; i++;
-talent[i] = [0, "Improved Mana Shield", 2, 1, 4]; i++;
 talent[i] = [0, "Improved Counterspell", 2, 2, 4]; i++;
 talent[i] = [0, "Arcane Meditation", 3, 4, 4]; i++;
+talent[i] = [0, "Arcane Potency", 3, 1, 5, [getTalentID("Arcane Impact"),2]]; i++;
 talent[i] = [0, "Presence of Mind", 1, 2, 5]; i++;
 talent[i] = [0, "Arcane Mind", 5, 3, 5, [getTalentID("Arcane Resilience"),1]]; i++;
 talent[i] = [0, "Arcane Instability", 3, 2, 6, [getTalentID("Presence of Mind"),1]]; i++;
+talent[i] = [0, "Master Arcanist", 2, 3, 6, [getTalentID("Arcane Mind"),5]]; i++;
+talent[i] = [0, "Arcane Alacrity", 2, 1, 7, [getTalentID("Arcane Potency"),3]]; i++;
 talent[i] = [0, "Arcane Power", 1, 2, 7, [getTalentID("Arcane Instability"),3]]; i++;
 
 treeStartStop[t] = i -1;
@@ -96,11 +98,9 @@ i++;
 
 //Improved Arcane Missiles - Arcane
 rank[i] = [
-		"Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles.",
-		"Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles.",
-		"Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles.",
-		"Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles.",
-		"Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles."
+		"Gives you a 33% chance to avoid interruption caused by damage while channeling Arcane Missiles and increases it's range by 2 yards.",
+		"Gives you a 66% chance to avoid interruption caused by damage while channeling Arcane Missiles and increases it's range by 4 yards.",
+		"Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and increases it's range by 6 yards."
 		];
 i++;		
 		
@@ -131,33 +131,26 @@ rank[i] = [
 		];
 i++;		
 
-//Improved Dampen Magic - Arcane
+//Arcane Impact - Arcane	
 rank[i] = [
-		"Increases the effect of your Amplify Magic and Dampen Magic spells by 25%.",
-		"Increases the effect of your Amplify Magic and Dampen Magic spells by 50%."
+		"Increases the critical strike chance of your Arcane Explosion spell by an additional 3% and the critical strike chance of your Arcane Missiles by an additional 2%.",
+		"Increases the critical strike chance of your Arcane Explosion spell by an additional 6% and the critical strike chance of your Arcane Missiles by an additional 4%."
+		];		
+i++;
+
+//Arcane Attunement - Arcane
+rank[i] = [
+		"Increases the effect of your Amplify Magic and Dampen Magic spells by 25% and decreases the mana lost per point of damage taken when Mana Shield is active by 10%.",
+		"Increases the effect of your Amplify Magic and Dampen Magic spells by 50% and decreases the mana lost per point of damage taken when Mana Shield is active by 20%."
 		];
 i++;		
-		
-//Improved Arcane Explosion - Arcane	
-rank[i] = [
-		"Increases the critical strike chance of your Arcane Explosion spell by an additional 2%",
-		"Increases the critical strike chance of your Arcane Explosion spell by an additional 4%",
-		"Increases the critical strike chance of your Arcane Explosion spell by an additional 6%"
-		];		
-i++;		
+
 
 //Arcane Explosion - Arcane		
 rank[i] = [ 
 		"Increases your armor by an amount equal to 50% of your Intellect."
 		];
-i++;	
-
-//Improved Mana Shield - Arcane		
-rank[i] = [
-		"Decreases the mana lost per point of damage taken when Mana Shield is active by 10%.",
-		"Decreases the mana lost per point of damage taken when Mana Shield is active by 20%."
-		];
-i++;		
+i++;			
 
 //Improved Counterspell - Arcane	
 rank[i] = [
@@ -173,6 +166,14 @@ rank[i] = [
 		"Allows 15% of your Mana regeneration to continue while casting."
 		];
 i++;		
+
+//Arcane Potency - Arcane		
+rank[i] = [
+		"Increase the critical strike damage bonus of your Arcane spells by 33%",
+		"Increase the critical strike damage bonus of your Arcane spells by 66%",
+		"Increase the critical strike damage bonus of your Arcane spells by 100%"
+		];
+i++;	
 
 //Presence of Mind - Arcane
 rank[i] = [
@@ -197,6 +198,20 @@ rank[i] = [
 		"Increases your spell damage and critical strike chance by 3%."
 		];		
 i++;		
+
+//Master Arcanist - Arcane		
+rank[i] = [
+		"Reduce the cast time of your Teleport, Portal, and Conjure spells by 25% and their mana costs by 37%",
+		"Reduce the cast time of your Teleport, Portal, and Conjure spells by 50% and their mana costs by 75%"
+		];		
+i++;	
+
+//Arcane Alacrity - Arcane		
+rank[i] = [
+		"Reduce the cooldown of your Blink spell by 20% and decreases the cast time of your Polymorph spell by 50%.",
+		"Reduce the cooldown of your Blink spell by 40% and decreases the cast time of your Polymorph spell by 100%."	
+		];		
+i++;	
 
 //Arcane Power - Arcane				
 rank[i] = [

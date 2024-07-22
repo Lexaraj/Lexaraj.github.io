@@ -26,7 +26,7 @@ talent[i] = [0, "Presence of Mind", 1, 2, 5]; i++;
 talent[i] = [0, "Arcane Mind", 5, 3, 5, [getTalentID("Arcane Resilience"),1]]; i++;
 talent[i] = [0, "Arcane Instability", 3, 2, 6, [getTalentID("Presence of Mind"),1]]; i++;
 talent[i] = [0, "Master Arcanist", 2, 3, 6, [getTalentID("Arcane Mind"),5]]; i++;
-talent[i] = [0, "Arcane Alacrity", 2, 1, 7, [getTalentID("Arcane Potency"),3]]; i++;
+talent[i] = [0, "Temporal Dilation", 2, 1, 7, [getTalentID("Arcane Potency"),3]]; i++;
 talent[i] = [0, "Arcane Power", 1, 2, 7, [getTalentID("Arcane Instability"),3]]; i++;
 
 treeStartStop[t] = i -1;
@@ -208,8 +208,8 @@ i++;
 
 //Temporal Dilation - Arcane		
 rank[i] = [
-		"Your Arcane damage spells apply Temporal Dilation on the target, reducing their melee attack speed, ranged attack speed, and casting speed by 10%. Lasts 5 seconds.",
-		"Your Arcane damage spells apply Temporal Dilation on the target, reducing their melee attack speed, ranged attack speed, and casting speed by 20%. Lasts 5 seconds."
+		"Your Arcane damage spells apply Temporal Dilation to the target, reducing their melee attack speed, ranged attack speed, and casting speed by 10% for 4 seconds.",
+		"Your Arcane damage spells apply Temporal Dilation to the target, reducing their melee attack speed, ranged attack speed, and casting speed by 20% for 4 seconds."
 		];		
 i++;	
 

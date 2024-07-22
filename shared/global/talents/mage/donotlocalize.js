@@ -26,7 +26,7 @@ nltalent[i] = ["Presence of Mind",]; i++;
 nltalent[i] = ["Arcane Mind"]; i++;
 nltalent[i] = ["Arcane Instability"]; i++;
 nltalent[i] = ["Master Arcanist"]; i++;
-nltalent[i] = ["Arcane Alacrity"]; i++;
+nltalent[i] = ["Temporal Dilation"]; i++;
 nltalent[i] = ["Arcane Power"]; i++;
 
 treeStartStop[t] = i -1;

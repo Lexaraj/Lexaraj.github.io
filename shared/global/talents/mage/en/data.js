@@ -206,10 +206,10 @@ rank[i] = [
 		];		
 i++;	
 
-//Arcane Alacrity - Arcane		
+//Temporal Dilation - Arcane		
 rank[i] = [
-		"Reduce the cooldown of your Blink spell by 20% and decreases the cast time of your Polymorph spell by 50%.",
-		"Reduce the cooldown of your Blink spell by 40% and decreases the cast time of your Polymorph spell by 100%."	
+		"Your Arcane damage spells apply Temporal Dilation on the target, reducing their melee attack speed, ranged attack speed, and casting speed by 10%. Lasts 5 seconds.",
+		"Your Arcane damage spells apply Temporal Dilation on the target, reducing their melee attack speed, ranged attack speed, and casting speed by 20%. Lasts 5 seconds."
 		];		
 i++;	
 

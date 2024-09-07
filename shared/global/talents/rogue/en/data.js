@@ -515,7 +515,7 @@ i++;
 	
 //From the Shadows - Subtlety 
 rank[i]=[
-			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>30 sec cooldown</span><br>Partially conceal yourself in the shadows, allowing you to use abilities requiring stealth. Effect ends after 10 seconds or until an offensive stealth ability is used."
+			"Reduces the cooldown of Vanish by 3 minutes."
 		];
 i++;	
 		

@@ -27,13 +27,15 @@ talent[i] = [0, "Improved Inner Fire", 3, 1, 4]; i++;
 talent[i] = [0, "Mental Agility", 5, 2, 4]; i++;
 talent[i] = [0, "Improved Mana Burn", 2, 4, 4]; i++;
 
-
+talent[i] = [0, "Aspiration", 3, 1, 5]; i++;
 talent[i] = [0, "Mental Strength", 5, 2, 5]; i++;
-talent[i] = [0, "Divine Spirit", 1, 3, 5, [getTalentID("Meditation"),3]]; i++;
+talent[i] = [0, "Soul Warding", 2, 3, 5, [getTalentID("Meditation"),3]]; i++;
 
-talent[i] = [0, "Force of Will", 5, 3, 6]; i++;
+talent[i] = [0, "Force of Will", 5, 1, 6]; i++;
+talent[i] = [0, "Power Infusion", 1, 2, 6, [getTalentID("Mental Strength"),5]]; i++;
+talent[i] = [0, "Soul Renewal", 1, 3, 6, [getTalentID("Soul Warding"),2]]; i++;
 
-talent[i] = [0, "Power Infusion", 1, 2, 7, [getTalentID("Mental Strength"),5]]; i++;
+talent[i] = [0, "Pain Suppression", 1, 2, 7, [getTalentID("Power Infusion"),1]]; i++;
 
 
 treeStartStop[t] = i -1;
@@ -199,6 +201,15 @@ rank[i] = [
 
 i++;		
 
+//Aspiration - Discipline		
+rank[i] = [
+		"Increases the effectiveness of your next Power Word: Shield by 8% after getting a critical effect from your Flash Heal, Heal, Greater Heal, or Prayer of Healing spell.",
+		"Increases the effectiveness of your next Power Word: Shield by 16% after getting a critical effect from your Flash Heal, Heal, Greater Heal, or Prayer of Healing spell.",
+		"Increases the effectiveness of your next Power Word: Shield by 25% after getting a critical effect from your Flash Heal, Heal, Greater Heal, or Prayer of Healing spell."
+		];
+
+i++;		
+
 
 //Mental Strength - Discipline		
 rank[i] = [
@@ -213,17 +224,13 @@ i++;
 
 
 	
-//Divine Spirit - Discipline				
+//Soul Warding - Discipline				
 rank[i] = [
-			"<span style=text-align:left;float:left;>285 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br>Instant cast<br>Holy power infuses the target, increasing their Spirit by 17 for 30 min.<br><br>\
-			&nbsp;Trainable Ranks Listed Below:<br>\
-			&nbsp;Rank 2: 420 Mana, 23 Spirit<br>\
-			&nbsp;Rank 3: 785 Mana, 33 Spirit<br>\
-			&nbsp;Rank 4: 970 Mana, 40 Spirit"
+		"Reduces the cooldown of your Power Word: Shield spell by 2 seconds and reduces the mana cost of your Power Word: Shield by 7%",
+		"Reduces the cooldown of your Power Word: Shield spell by 4 seconds and reduces the mana cost of your Power Word: Shield by 15%"
 		];
 
 i++;		
-		
 
 
 //Force of Will - Discipline		
@@ -235,12 +242,27 @@ rank[i] = [
 		"Increases your spell damage by 5% and the critical strike chance of your offensive spells by 5%."
 		];
 
-i++;		
-
+i++;
 
 //Power Infusion - Discipline				
 rank[i] = [
 			"<span style=text-align:left;float:left;>182 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>3 min cooldown</span><br>Infuses the target with power, increasing their spell damage and healing by 20%. Lasts 15 sec."
+		];
+
+i++;
+
+
+//Soul Renewal - Discipline		
+rank[i] = [
+		"Reduces the duration of Weakened Soul by 3 seconds."
+		];
+
+i++;		
+
+
+//Pain Suppression - Discipline				
+rank[i] = [
+			"<span style=text-align:left;float:left;>182 Mana</span><span style=text-align:right;float:right;>30 yd range</span><br><span style=text-align:left;float:left;>Instant cast</span><span style=text-align:right;float:right;>3 min cooldown</span><br>Instill the target with Divine resolve, reducing all damage taken by 40% Lasts 8 sec."
 		];
 
 i++;			
@@ -390,7 +412,7 @@ i++;
 //Spirit of Redemption - Holy
 		
 rank[i] = [
-			"Upon death, the priest becomes the Spirit of Redemption for 10 sec.  The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects.  While in this form, the priest can cast any healing spell free of cost.  When the effect ends, the priest dies."
+			"Increases total spirit by 5% and, upon death, the priest becomes the Spirit of Redemption for 10 sec.  The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects.  While in this form, the priest can cast any healing spell free of cost.  When the effect ends, the priest dies."
 		];
 
 i++;		
@@ -429,7 +451,7 @@ i++;
 //Lightwell - Holy
 
 rank[i] = [
-			"225 Mana<br><span style=text-align:left;float:left;>3 sec cast</span><span style=text-align:right;float:right;>10 min cooldown</span><br>Creates a holy Lightwell near the priest.  Friendly targets can click the Lightwell to restore 800 health over 10 sec.  Being attacked cancels the effect.  Lightwell lasts for 3 min or 5 charges.<br><br>\
+			"225 Mana<br><span style=text-align:left;float:left;>3 sec cast</span><span style=text-align:right;float:right;>5 min cooldown</span><br>Creates a holy Lightwell near the priest.  Friendly targets can click the Lightwell to restore 800 health over 10 sec.  Lightwell lasts for 3 min or 5 charges.<br><br>\
 			&nbsp;Trainable Ranks Listed Below:<br>\
 			&nbsp;Rank 2: 295 Mana, 1165 Health<br>\
 			&nbsp;Rank 3: 365 Mana, 1600 Health"

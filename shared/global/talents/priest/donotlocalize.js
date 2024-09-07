@@ -19,10 +19,14 @@ nltalent[i] = ["Meditation"]; i++;
 nltalent[i] = ["Improved Inner Fire"]; i++;
 nltalent[i] = ["Mental Agility"]; i++;
 nltalent[i] = ["Improved Mana Burn"]; i++;
+nltalent[i] = ["Aspiration"]; i++;
 nltalent[i] = ["Mental Strength"]; i++;
-nltalent[i] = ["Divine Spirit"]; i++;
+nltalent[i] = ["Soul Warding"]; i++;
 nltalent[i] = ["Force of Will"]; i++;
 nltalent[i] = ["Power Infusion"]; i++;
+nltalent[i] = ["Soul Renewal"]; i++;
+nltalent[i] = ["Pain Suppression"]; i++;
+
 
 
 treeStartStop[t] = i -1;

@@ -69,7 +69,7 @@ talent[i] = [2, "Premeditation", 1, 2, 5, [getTalentID("Preparation"),1]]; i++;
 talent[i] = [2, "Dirty Deeds", 2, 3, 5]; i++;
 talent[i] = [2, "Hemorrhage", 1, 4, 5, [getTalentID("Serrated Blades"),3]]; i++;
 talent[i] = [2, "Deadliness", 5, 3, 6]; i++;
-talent[i] = [2, "From the Shadows", 1, 2, 7, [getTalentID("Premeditation"),1]]; i++;
+talent[i] = [2, "Improved Vanish", 1, 2, 7, [getTalentID("Premeditation"),1]]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -513,9 +513,10 @@ rank[i]=[
 i++;		
 		
 	
-//From the Shadows - Subtlety 
+//Improved Vanish - Subtlety 
 rank[i]=[
-			"Reduces the cooldown of Vanish by 3 minutes."
+rank[i]=[
+			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>1 min cooldown</span><br>Allows the rogue to vanish from sight, entering an improved stealth mode for 10 sec.  Also breaks movement impairing effects."
 		];
 i++;	
 		

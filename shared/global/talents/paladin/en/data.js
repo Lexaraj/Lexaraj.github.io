@@ -43,7 +43,7 @@ talent[i] = [1, "Improved Hammer of Justice", 3, 2, 4]; i++;
 talent[i] = [1, "Improved Concentration Aura", 3, 3, 4]; i++;
 talent[i] = [1, "Blessing of Sanctuary", 1, 1, 5]; i++;
 talent[i] = [1, "Holy Shield", 1, 2, 5]; i++;
-talent[i] = [1, "Reckoning", 5, 3, 5]; i++;
+talent[i] = [1, "Reckoning", 3, 3, 5]; i++;
 talent[i] = [1, "Unwavering Devotion", 3, 3, 6]; i++;
 talent[i] = [1, "Valiance Aura", 1, 2, 7, [getTalentID("Holy Shield"),1]]; i++;
 
@@ -258,8 +258,8 @@ i++;
 
 //Shield Specialization - Protection 
 rank[i] = [
-"Increases the amount of damage absorbed by your shield by 15% and restores 1% mana when a block occurs. This effect cannot occur more than once every second.",
-"Increases the amount of damage absorbed by your shield by 30% and restores 2% mana when a block occurs. This effect cannot occur more than once every second."
+"Increases the amount of damage absorbed by your shield by 15% and restores 2.5% mana when a block occurs. This effect cannot occur more than once every second.",
+"Increases the amount of damage absorbed by your shield by 30% and restores 5% mana when a block occurs. This effect cannot occur more than once every second."
 		];
 i++;			
 
@@ -302,11 +302,9 @@ i++;
 
 //Reckoning - Protection
 rank[i] = [
-		"Gives you a 10% chance to gain an extra attack after a successful block.",
-		"Gives you a 20% chance to gain an extra attack after a successful block.",
-		"Gives you a 30% chance to gain an extra attack after a successful block.",
-		"Gives you a 40% chance to gain an extra attack after a successful block.",
-		"Gives you a 50% chance to gain an extra attack after a successful block."						
+		"Gives you a 33% chance to gain an extra attack after a successful block.",
+		"Gives you a 66% chance to gain an extra attack after a successful block.",
+		"Gives you a 100% chance to gain an extra attack after a successful block."						
 		];
 i++;
 

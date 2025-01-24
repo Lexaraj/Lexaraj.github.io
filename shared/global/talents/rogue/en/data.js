@@ -515,7 +515,6 @@ i++;
 	
 //Improved Vanish - Subtlety 
 rank[i]=[
-rank[i]=[
 			"<span style=text-align:left;float:left;>Instant</span><span style=text-align:right;float:right;>1 min cooldown</span><br>Allows the rogue to vanish from sight, entering an improved stealth mode for 10 sec.  Also breaks movement impairing effects."
 		];
 i++;	

@@ -18,12 +18,14 @@ talent[i] = [0, "Improved Slice and Dice", 3, 4, 2]; i++;
 talent[i] = [0, "Relentless Strikes", 1, 1, 3]; i++;
 talent[i] = [0, "Improved Expose Armor", 2, 2, 3]; i++;
 talent[i] = [0, "Lethality", 5, 3, 3, [getTalentID("Malice"),5]]; i++;
-talent[i] = [0, "Vile Poisons", 5, 2, 4]; i++;
-talent[i] = [0, "Improved Poisons", 5, 3, 4]; i++;
+talent[i] = [0, "Anticoagulant", 2, 1, 4]; i++;
+talent[i] = [0, "Lasting Poisons", 2, 2, 4]; i++;
+talent[i] = [0, "Improved Kidney Shot", 3, 3, 4]; i++;
 talent[i] = [0, "Cold Blood", 1, 2, 5]; i++;
-talent[i] = [0, "Improved Kidney Shot", 3, 3, 5]; i++;
+talent[i] = [0, "Master Poisoner", 3, 3, 5]; i++;
 talent[i] = [0, "Seal Fate", 5, 2, 6, [getTalentID("Cold Blood"),1]]; i++;
-talent[i] = [0, "Vigor", 1, 2, 7]; i++;
+talent[i] = [0, "Exposed Bloodstream", 2, 3, 6]; i++;
+talent[i] = [0, "Critical Poisons", 1, 2, 7]; i++;
 
 treeStartStop[t] = i -1;
 t++;
@@ -151,25 +153,27 @@ rank[i] = [
 		];
 i++;		
 
-//Vile Poisons - Assassination
+//Anticoagulant - Assassination	
 rank[i] = [
-"Increases the damage dealt by your poisons by 4% and gives your poisons a 8% chance to resist dispel effects.",
-"Increases the damage dealt by your poisons by 8% and gives your poisons a 16% chance to resist dispel effects.",
-"Increases the damage dealt by your poisons by 12% and gives your poisons a 24% chance to resist dispel effects.",
-"Increases the damage dealt by your poisons by 16% and gives your poisons a 32% chance to resist dispel effects.",
-"Increases the damage dealt by your poisons by 20% and gives your poisons a 40% chance to resist dispel effects."
+"Your Instant and Deadly Poison applications have a 50% chance to apply Anticoagulant to the target for 10 seconds, increasing all bleed damage taken by 50%.",
+"Your Instant and Deadly Poison applications have a 50% chance to apply Anticoagulant to the target for 10 seconds, increasing all bleed damage taken by 100%."
 		];
-i++;		
+i++;
 
-//Improved Instant Poison - Assassination	
+//Lasting Poisons - Assassination	
 rank[i] = [
-"Increases the chance to apply poisons to your target by 2%.",
-"Increases the chance to apply poisons to your target by 4%.",
-"Increases the chance to apply poisons to your target by 6%.",
-"Increases the chance to apply poisons to your target by 8%.",
-"Increases the chance to apply poisons to your target by 10%."
+"Increase the number of charges for all poisons by 50% and increase the duration of your Deadly, Wound, Mind-numbing, and Crippling Poisons by 3 seconds.",
+"Increase the number of charges for all poisons by 100% and increase the duration of your Deadly, Wound, Mind-numbing, and Crippling Poisons by 6 seconds."
 		];
-i++;		
+i++;	
+
+//Improved Kidney Shot - Assassination
+rank[i] = [
+"While affected by your Kidney Shot ability, target receives an additional 5% damage from all sources.",
+"While affected by your Kidney Shot ability, target receives an additional 10% damage from all sources.",
+"While affected by your Kidney Shot ability, target receives an additional 15% damage from all sources."
+		];
+i++;			
 
 //Cold Blood - Assassination
 rank[i] = [
@@ -177,13 +181,13 @@ rank[i] = [
 		];
 i++;		
 
-//Improved Kidney Shot - Assassination
+//Master Poisoner - Assassination
 rank[i] = [
-"While affected by your Kidney Shot ability, target receives an additional 3% damage from all sources.",
-"While affected by your Kidney Shot ability, target receives an additional 6% damage from all sources.",
-"While affected by your Kidney Shot ability, target receives an additional 9% damage from all sources."
+"Reduces the chance that your poisons will be resisted by 5% and gives your poisons a 17% chance to resist dispel effects.",
+"Reduces the chance that your poisons will be resisted by 10% and gives your poisons a 34% chance to resist dispel effects.",
+"Reduces the chance that your poisons will be resisted by 15% and gives your poisons a 50% chance to resist dispel effects."
 		];
-i++;		
+i++;	
 
 //Seal Fate - Assassination		
 rank[i] = [
@@ -195,9 +199,16 @@ rank[i] = [
 		];
 i++;		
 
-//Vigor - Assassination
+//Exposed Bloodstream - Assassination		
 rank[i] = [
-"Increases your maximum Energy by 10."
+"Increases your chance to apply poisons to bleeding targets by 20%",
+"Increases your chance to apply poisons to bleeding targets by 40%"
+		];
+i++;		
+
+//Critical Poisons - Assassination
+rank[i] = [
+"Your critical strikes increase the damage of your Instant Poison and Deadly Poison by 50% for the next 4 melee attacks."
 		];
 i++;		
 

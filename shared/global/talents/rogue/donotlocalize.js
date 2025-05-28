@@ -17,12 +17,14 @@ nltalent[i] = ["Improved Slice and Dice"]; i++;
 nltalent[i] = ["Relentless Strikes"]; i++;
 nltalent[i] = ["Improved Expose Armor"]; i++;
 nltalent[i] = ["Lethality"]; i++;
-nltalent[i] = ["Vile Poisons"]; i++;
-nltalent[i] = ["Improved Poisons"]; i++;
-nltalent[i] = ["Cold Blood"]; i++;
+nltalent[i] = ["Anticoagulant"]; i++;
+nltalent[i] = ["Lasting Poisons"]; i++;
 nltalent[i] = ["Improved Kidney Shot"]; i++;
+nltalent[i] = ["Cold Blood"]; i++;
+nltalent[i] = ["Master Poisoner"]; i++;
 nltalent[i] = ["Seal Fate"]; i++;
-nltalent[i] = ["Vigor"]; i++;
+nltalent[i] = ["Exposed Bloodstream"]; i++;
+nltalent[i] = ["Critical Poisons"]; i++;
 
 //combat talents
 nltalent[i] = ["Improved Gouge"]; i++;
